@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="420.0" prefWidth="600.0" style="-fx-background-color: #2E8465;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.TestController">
+    <children>
+        <Pane layoutY="80.0" prefHeight="340.0" prefWidth="600.0" style="-fx-background-color: #fafafa;">
+            <children>
+                <ImageView fx:id="uzor" fitHeight="198.0" fitWidth="174.0" layoutX="230.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Loop.png" />
+                    </image>
+                </ImageView>
+            <Button fx:id="arcButton" layoutX="14.0" layoutY="232.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="146.0" text="Дуговой">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="loopButton" layoutX="227.0" layoutY="232.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="146.0" text="Петлевой">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="curlButton" layoutX="440.0" layoutY="232.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="146.0" text="Завитковый">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Label fx:id="labelScore" layoutX="59.0" layoutY="56.0" prefHeight="109.0" prefWidth="83.0" text="1/20">
+               <font>
+                  <Font name="Arial" size="39.0" />
+               </font>
+            </Label>
+            </children>
+        </Pane>
+        <Label layoutX="127.0" layoutY="22.0" prefHeight="34.0" prefWidth="346.0" text="Выберите правильный тип узора" textFill="#eee9e9">
+            <font>
+                <Font name="Arial Narrow" size="27.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
